@@ -1,0 +1,27 @@
+body {
+    font-family: monospace;
+}
+
+header {
+    background-color: #33BBC5;
+    color: aliceblue;
+    text-align: center;
+    margin: 0 100px 0 100px;
+    border-radius: 5px;
+}
+
+.tinggiInput{
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    padding: 5px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
