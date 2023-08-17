@@ -10,9 +10,73 @@ header {
     border-radius: 5px;
 }
 
-.tinggiInput{
+
+/* Main */
+
+main {
+    margin: 0 100px 0 100px;
+    background-color: #33BBC5;
+    border-radius: 5px;
+}
+
+.inputSection {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.box1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: solid white 3px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: solid white 3px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#tinggiInput{
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    font-size:large ;
+    font-weight: bold;
+    margin:20px;
+    text-transform: uppercase;
+}
+
+img{
+    width: 100%;
+    height: 4cm;
+    display: flex;
+    justify-items: center;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    border: solid white 1px;
+    margin: 10px 10px 50px 10px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.detail p{
+    margin: 0;
 }
 
 label {
@@ -24,4 +88,29 @@ input {
     padding: 5px;
     margin-top: 3px;
     margin-bottom: 10px;
+}
+
+#btnHitung {
+    border-radius: 5px;
+    background-color: #279EFF;
+}
+
+#btnReset {
+    border-radius: 5px;
+    background-color: #C23373;
+}
+
+#btnHitung:hover {
+    background-color: #0C356A;    
+}
+
+#btnReset:hover {
+    background-color: #79155B;
+}
+
+@media only screen and (max-width:700px){
+    .inputSection {
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -15,12 +15,47 @@
     <!--Main-->
     <main>
         <section class="inputSection">
-            <label for="tinggiIput">Tinggi Segitiga</label>
-            <input type="number" id="tinggiInput" placeholder="Nilai Tinggi">
-            <label for="luasInput">Luas Segitiga</label>
-            <input type="number" id="luasInput" placeholder="Nilai Luas">
-        </section>
+            <div class="box1">
+                <span>Hitung Luas</span>
+                <img src="assets/Triangle.jpeg" alt="">
+                <div class="detail">
+                    <p>Rumus luas Segitiga (L=1/2 x a x t) </p>
+                    <p>Keterangan : </p>
+                    <p>L = luas </p>
+                    <p>a = alas </p>
+                    <p>t = tinggi </p>
+                </div>
+                <label for="tinggiInput">Tinggi Segitiga</label>
+                <input type="number" id="tinggi" onclick="tinggi" placeholder="Nilai Tinggi">
+                <label for="luasInput">Alas Segitiga</label>
+                <input type="number" id="alas" onclick="alas" placeholder="Nilai Alas">
+                <input type="number" id="luas">
+                <input type="button" id="btnHitung" value="Hitung" onclick="hitungLuas()">
+                <input type="button" id="btnReset" value="Reset" onclick="reset()">
+            </div>
+
+            <div class="box2">
+                <span>Hitung Keliling</span>
+                <img src="assets/Triangle.jpeg" alt="">
+                <div class="detail">
+                    <p>Rumus keliling Segitiga (K = s+s+s) </p>
+                    <p>Keterangan : </p>
+                    <p>K = Keliling </p>
+                    <p>s = sisi </p>
+                </div>
+                <label for="sisiInput">Panjang sisi</label>
+                <input type="number" id="a" placeholder="Nilai Sisi">
+                <label for="sisiInput">Panjang sisi</label>
+                <input type="number" id="b" placeholder="Nilai Sisi">
+                <label for="sisiInput">Panjang sisi</label>
+                <input type="number" id="c" placeholder="Nilai Sisi">
+                <input type="number" id="keliling">
+                <input type="button" id="btnHitung" value="Hitung" onclick="hitungKeliling()">
+                <input type="button" id="btnReset" value="Reset" onclick="reset()">
+            </div>
+        </section> 
     </main>
-    
+
+    <script src="js/script.js"></script>
 </body>
 </html>
